@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8"><title>U.E. José María Barroeta Paolini – Login</title>
+<link rel="stylesheet" href="css/styles.css">
+</head>
+<body class="login-body">
+  <div class="login-card">
+    <h1>U.E. "José María Barroeta Paolini"</h1>
+    <p class="subtitle">Sistema de Asistencias</p>
+
+    <div class="roles">
+      <button class="role-btn active" data-rol="administrador">Administrador</button>
+      <button class="role-btn"        data-rol="personal">Personal</button>
+    </div>
+
+    <form id="form-login">
+      <label>Cédula</label>
+      <input id="cedula" required placeholder="V-00000001">
+      <label>Contraseña</label>
+      <input id="password" type="password" required placeholder="••••••••">
+      <button type="submit" class="btn-primary">Ingresar</button>
+    </form>
+    <p id="msg" class="msg"></p>
+  </div>
+  <script src="js/login.js"></script>
+</body>
+</html>
