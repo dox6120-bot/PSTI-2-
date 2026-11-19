@@ -7,7 +7,7 @@ const app = express();
 app.use(cors());
 app.use(express.json());
 
-app.use(express.static(path.join(__dirname, 'frontend')));
+app.use(express.static(path.join(__dirname, '../frontend')));
 
 app.use('/api/auth',         require('./routes/auth'));
 app.use('/api/usuarios',     require('./routes/usuarios'));
@@ -18,7 +18,7 @@ app.use('/api/asistencias',  require('./routes/asistencias'));
 //app.get('/', (_req, res) => res.json({ ok: true, app: 'U.E. José María Barroeta Paolini' }));
 
 app.get('*', (_req, res) => {
-res.sendFile(path.join(__dirname, 'frontend', 'index.html'));
+res.sendFile(path.join(__dirname, '../frontend/index.html'));
 });
 
 const PORT = process.env.PORT || 3000;
