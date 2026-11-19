@@ -9,7 +9,7 @@ document.getElementById('btn-salir').onclick = () => {
 };
 
 async function api(url, opts = {}) {
-  const res = await fetch('http://localhost:3000' + url, {
+  const res = await fetch(url, {
     ...opts,
     headers: {
       'Content-Type': 'application/json',
